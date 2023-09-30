@@ -1,0 +1,12 @@
+.inp{
+    border: 1.5px solid black;
+    border-radius: 5px;
+    text-align: center;
+    width: 300px;
+    height: 35px;
+    margin-bottom: 30px;
+}
+
+.inline-block-child {
+    display: inline-block;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whoppers - Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+
+    <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+        
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body onload="check();">
+    <center>
+        <div class="logo">
+            <img width="200px" height="100px" src="whoppers final logo.jpg" alt="">
+        </div>
+        <div style="width: fit-content; border: 1px solid grey; border-radius: 10px;" class="container">
+            <h1 style="margin-right: 210px; font-size: 900;">Login</h1>
+            <div style="margin-top: 40px;" class="inp_div">
+            <p style="margin-right: 200px;"><b>Email Address</b></p>
+            <input id="user" class="inp">
+            </div>
+            <div style="margin-top: 0px;" class="inp_div">
+                <p class='child inline-block-child' style="margin-right: 125px;"><b>Password</b></p><a class='child inline-block-child' onclick="forgot();">Forgot Password</a>
+                <br>
+                <input id="pass" class="inp">
+            </div>
+            <div style="margin-top: 0px;" class="inp_div">
+                <button id="lgn_btn" onclick="login();" style="height: 35px; background-color: rgb(214, 220, 89); text-align: center; border: 1.5px solid black; border-radius: 5px; width: 300px;">Login</button>
+            </div>
+            <div style="margin-top: 20px; margin-right: 145px;" class="remember_me_div">
+            <input id="remember" class="child inline-block-child" type="checkbox"><p style="margin-left: 10px;" class="child inline-block-child">Keep me signed in.</p> 
+            </div>
+            <br><br>
+            <div class="new_to_whoppers_div">
+                <center>
+                    New to Whoppers?
+                    <br>
+                    <button onclick="register();" style="margin-bottom: 20px; margin-top: 10px; height: 35px; background-color: rgba(128, 128, 128, 0.237); text-align: center; border: 1.5px solid black; border-radius: 5px; width: 300px;">Create your Whoppers account</button>
+                </center>
+            </div>
+    </div>
+    </center>
+    <script src="main.js"></script>
+</body>
+</html>

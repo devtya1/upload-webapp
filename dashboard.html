@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body onload="load();">
+    <center>
+    <div style="top: 0; margin-bottom: 50px; height: fit-content;" class="header">
+        <h5 class="inline-block-child" style="margin-bottom: 50px;" id="name"></h5><h5 class="inline-block-child" id="status">Ststus: Online</h5><h5 class="inline-block-child" id="prj"></h5>
+    </div>
+    <div style="height: fit-content;" class="main container">
+        <button onclick="change_view();" style="margin-right: 100px; background-color: chartreuse;" class="link float-on-hover btns inline-block-child">See Your Projects</button>
+        <button onclick="change_view_all();" style="margin-left: 100px; background-color: rgb(255, 157, 0);" class="link float-on-hover btns inline-block-child">See All Projects</button>
+    </div>
+    <br><br><br><br><br><br><br>
+    <div style="height: fit-content;" class="main container">
+        <button onclick="change_upl();" style="margin-right: 100px; background-color: rgb(0, 26, 255);" class="link float-on-hover btns inline-block-child">Upload new Project</button>
+        <button onclick="change_del();" style="margin-left: 100px; background-color: rgb(255, 0, 0);" class="link float-on-hover btns inline-block-child">Delete any Projects</button>
+    </div>
+    </center>
+    <script src="dashboard.js"></script>
+</body>
+</html>
